@@ -1,0 +1,23 @@
+{
+  "name": "dendron-emi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earth-metabolome-initiative/dendron-emi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/earth-metabolome-initiative/dendron-emi/issues"
+  },
+  "homepage": "https://github.com/earth-metabolome-initiative/dendron-emi#readme",
+  "dependencies": {
+    "@dendronhq/dendron-cli": "^0.119.0"
+  }
+}
