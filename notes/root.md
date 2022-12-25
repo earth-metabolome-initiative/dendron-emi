@@ -2,7 +2,7 @@
 id: 3rbfqqbp7pwbkdcrgc97u7l
 title: The Earth Metabolome Initiative
 desc: ''
-updated: 1671988145200
+updated: 1671988421333
 created: 1671985562294
 ---
 # Welcome to the Earth Metabolome Initiative Dendron notes
@@ -26,9 +26,9 @@ We have started the Digital Botanical Gardens Initiative, abbreviated DBGI, as a
 
 ## Working with the garage door up
 
-A way of working briefly described by Andy Matuschak here https://notes.andymatuschak.org/z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu. 
+A way of working briefly described by Andy Matuschak here https://notes.andymatuschak.org/z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu.
 
-![](/assets/images/2022-06-18-17-47-56.png){max-width: 400px}
+![](/assets/images/2022-12-25-18-13-17.png){max-width: 400px}
 
 ## Open Notebook Science
 
