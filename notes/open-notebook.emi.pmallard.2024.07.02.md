@@ -2,7 +2,7 @@
 id: o2q8t2o2oaa2ldkf8u4bhm3
 title: '2024-07-02'
 desc: ''
-updated: 1719926468163
+updated: 1719931554057
 created: 1719922654247
 traitIds:
   - open-notebook-emi-pmallard
@@ -27,7 +27,7 @@ Today is 2024.07.02
 
 ## Notes
 
-Discussion Tarcisio, Luca, Disha
+### Discussion Tarcisio, Luca, Disha
 
 EMI Ontology
 
@@ -38,6 +38,34 @@ TOP ids from top thesaurus https://top-thesaurus.org/
 Tarcisio will set a Qlever instance 
 
 SKOS conversion of OTL
+
+
+### Meeting Michael J
+
+Create user on the commons-server
+ 
+
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003101_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003140_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003151_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003154_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003155_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003164_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003179_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003180_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003185_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003187_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003196_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003198_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003214_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_003223_01_01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_blk_pre01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_mapp_bk_blk_post01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_mapp_bk_blk_post02.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_mapp_bk_blk_post03.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_mapp_bk_blk_pre01.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_mapp_bk_blk_pre02.mzML</file>
+<file>/home/allardpm/git_repos/EMI/mzmine-batch-mode-sandbox/data/mzml/202406251749_PMA_dbgi_mapp_bk_blk_pre03.mzML</file>
 
 
 
