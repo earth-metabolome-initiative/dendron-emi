@@ -37,7 +37,7 @@ It is always composed of 2 attributes:
 I don't currently know what 1 and 2 means
 
 I should scout in the modules directory in mzmine to understand how to retrieve the modules and/or exploit some structures.
--> https://github.com/mzmine/mzmine.github.io
+-> https://github.com/
 
 First batchstep should always be file input? (idk but feels right), then it's up to the user.
 
