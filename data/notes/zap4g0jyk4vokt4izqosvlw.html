@@ -1,0 +1,28 @@
+<h1 id="2024-07-05">2024-07-05<a aria-hidden="true" class="anchor-heading icon-link" href="#2024-07-05"></a></h1>
+<h1 id="this-is-michaels-emi-open-notebook">This is Michael's EMI open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-michaels-emi-open-notebook"></a></h1>
+<p>Today is 2024.07.05</p>
+<h2 id="todo-today">Todo today<a aria-hidden="true" class="anchor-heading icon-link" href="#todo-today"></a></h2>
+<h3 id="have-a-look-at-the-emi-discussion-forum">Have a look at the EMI discussion forum<a aria-hidden="true" class="anchor-heading icon-link" href="#have-a-look-at-the-emi-discussion-forum"></a></h3>
+<pre><code>- https://github.com/orgs/earth-metabolome-initiative/discussions
+</code></pre>
+<h3 id=""><a aria-hidden="true" class="anchor-heading icon-link" href="#"></a></h3>
+<h3 id="-1"><a aria-hidden="true" class="anchor-heading icon-link" href="#-1"></a></h3>
+<h2 id="doing">Doing<a aria-hidden="true" class="anchor-heading icon-link" href="#doing"></a></h2>
+<p>The idea is to create the parameters file using command line in the form of:</p>
+<ul>
+<li>cargo build argv1 argv2
+Where odds argvs are flagging which batchstep to include (inputted by user) and followed by it's parameter/s.</li>
+</ul>
+<p>This are the modules:</p>
+<ul>
+<li>io.github.mzmine.modules.io.import_rawdata_all.AllSpectralDataImportModule</li>
+<li>io.github.mzmine.modules.dataprocessing.featdet_massdetection.MassDetectionModule</li>
+<li>io.github.mzmine.modules.dataprocessing.featdet_adapchromatogrambuilder.ModularADAPChromatogramBuilderModule</li>
+<li>io.github.mzmine.modules.dataprocessing.featdet_smoothing.SmoothingModule</li>
+<li>io.github.mzmine.modules.dataprocessing.featdet_chromatogramdeconvolution.minimumsearch.MinimumSearchFeatureResolverModule</li>
+<li>io.github.mzmine.modules.dataprocessing.filter_isotopegrouper.IsotopeGrouperModule</li>
+<li>io.github.mzmine.modules.dataprocessing.filter_rowsfilter.RowsFilterModule</li>
+<li>io.github.mzmine.modules.io.export_features_gnps.fbmn.GnpsFbmnExportAndSubmitModule</li>
+<li>io.github.mzmine.modules.io.export_features_sirius.SiriusExportModule</li>
+</ul>
+<p>I believe the flags need to be the information after io.github.mzmine.modules. as it is constant between all modules.</p>
