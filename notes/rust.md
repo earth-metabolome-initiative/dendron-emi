@@ -2,7 +2,7 @@
 id: 0h57aw0be2jnc3dxcpn3ajn
 title: Rust
 desc: ''
-updated: 1737651116140
+updated: 1737789794423
 created: 1737625384436
 ---
 
@@ -152,4 +152,92 @@ let second = a[1];
 ## The Slice type
 
 
+
+## Vectors
+
+These are similar to arrays but can grow or shrink in size. 
+They are stored in the heap rather than the stack which is the case for arrays.
+
+Vectors can only store data of the same type.
+
+The vec! macro is used to create a vector.
+
+```rust
+let v = vec![1, 2, 3];
+```
+
+## Ownership
+
+Ownership is a set of rule governing how Rust manages memory.
+
+Three possibilities for programming languanges:
+
+- their is garbage collection periodically 
+- the programmer must explicitily allocate and free memory
+- memory is managed through a system of **ownership** with a set of rules checked by the compiler (rust)
+
+
+### Stck versus heap
+
+Think of stack as a pile of plates. _last in, first out._ You dont remove stuff from in between.
+Yopu _push onto the stack_ or _pop off the stack_. All data on the stack must have known, fixed size.
+
+On the hep, its different and less organized. The memory allocator check for a big enough spacem marks it as beeing in use and returns a _pointer._ This is called _allocating._ Because the pointer is know, fixed sized, you can in turn store it on the stack. 
+
+Pushing on the stack is much quicker because you just have to add stuff on top. No time wasted in finding free space.
+Similarly acccessing data on the stack is quicker.
+
+#### Ownership rules
+
+- each values in Rust as an owner.
+- There can be only one owner at a time.
+- When the owner goes out of scope, the value will be dropped.
+
+#### Variable scope
+
+
+The scope is the range within the programm for which an item is valid.
+
+```rust
+    {                      // s is not valid here, it’s not yet declared
+        let s = "hello";   // s is valid from this point forward
+
+        // do stuff with s
+    }                      // this scope is now over, and s is no longer valid
+```
+
+What happens behind the scenes is that rust's `drop` function is automatically runned at the closing opf the curly brackets.
+
+
+## References and borrowing
+
+
+A reference is like a pointer in the sense that it is an adress to be followed to acess the data stored at this adress (data owned by another variable). But unlike a pointer, a reference is guaranteed to point to a valid value of a particular type for the life of that reference.
+
+
+The ampersands represent a reference e.g `&s1`. Here you refer to some value, without taking ownership.
+
+`*`is the _dereferencing_ operator.
+
+Because we nevere had ownership when using a reference, we do not need to return the values from a function to give back ownership.
+The creation of a reference is called _borrowing_.
+Like in real life, if a person owns something, you can, sometimes, borrow it. When you are done you give it back, because you dont own it.
+
+
+You cannot modify stuff you borrow if it is not mutable. However you can make mutable references.
+One big restriction: if you have a mutable reference to a value, you cannot meke another reference to that value.
+
+
+This allows rust to prevent data race condition.
+
+This happens in the three sceanrii:
+
+- two or more pointers access the same data at the same time.
+- at least one of the pointers is beeing used to write to the data
+- no mechanism used to synchronize acess to the data.
+
+Rules of references.
+
+- at any given time you can have either one mutable reference or any number of immutable references.
+- references must always be valid.
 
