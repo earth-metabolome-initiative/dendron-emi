@@ -1,0 +1,3032 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830298177,
+      "created": 1751830298177,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "3rbfqqbp7pwbkdcrgc97u7l": {
+      "id": "3rbfqqbp7pwbkdcrgc97u7l",
+      "title": "The Earth Metabolome Initiative",
+      "desc": "",
+      "updated": 1671988421333,
+      "created": 1671985562294,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "4a9583a0623e72b112fd491979429bc1",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "3rbfqqbp7pwbkdcrgc97u7l",
+            "vaultName": "dendron-emi"
+          },
+          "value": "dendron",
+          "position": {
+            "start": {
+              "line": 4,
+              "column": 69,
+              "offset": 257
+            },
+            "end": {
+              "line": 4,
+              "column": 83,
+              "offset": 271
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "dendron"
+          }
+        }
+      ],
+      "anchors": {
+        "welcome-to-the-earth-metabolome-initiative-dendron-notes": {
+          "type": "header",
+          "text": "Welcome to the Earth Metabolome Initiative Dendron notes",
+          "value": "welcome-to-the-earth-metabolome-initiative-dendron-notes",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "what-is-the-earth-metabolome-initiative-": {
+          "type": "header",
+          "text": "What is the Earth Metabolome Initiative ?",
+          "value": "what-is-the-earth-metabolome-initiative-",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "how-is-it-related-to-the-digital-botanical-gardens-initiative-": {
+          "type": "header",
+          "text": "How is it related to the Digital Botanical Gardens Initiative ?",
+          "value": "how-is-it-related-to-the-digital-botanical-gardens-initiative-",
+          "line": 19,
+          "column": 0,
+          "depth": 1
+        },
+        "an-open-science-project": {
+          "type": "header",
+          "text": "An Open Science project",
+          "value": "an-open-science-project",
+          "line": 24,
+          "column": 0,
+          "depth": 1
+        },
+        "working-with-the-garage-door-up": {
+          "type": "header",
+          "text": "Working with the garage door up",
+          "value": "working-with-the-garage-door-up",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "open-notebook-science": {
+          "type": "header",
+          "text": "Open Notebook Science",
+          "value": "open-notebook-science",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "vrae5dt51ddpchgp8ny78cp",
+        "l03fwlci5f5rdpot3v7oli6",
+        "ifd39krpwjbpoujotes8k8e",
+        "4ukw0m9fnolvo16alfg228n",
+        "s1ylfmp2pclqnwyr7c4kf7i",
+        "gug1zw6wdzvta1evuzc5nut",
+        "gz9usdkc2az543npdnopxrs",
+        "fzeg276w1meifz5qyccsd4s",
+        "yvialv0y265tyn1u4xxygn6",
+        "smclm9qks60i3brdytv436w",
+        "em044ww0x12gvshkq9s1gp6",
+        "3yuaegcggymmvr8og84zkur",
+        "cg7slewy3y8h81yvqfao1xt"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "cg7slewy3y8h81yvqfao1xt": {
+      "fname": "open-notebook",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297706,
+      "created": 1751830297706,
+      "id": "cg7slewy3y8h81yvqfao1xt",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "12pqs6ubpfafuy3eh7scq8x"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Open Notebook"
+    },
+    "12pqs6ubpfafuy3eh7scq8x": {
+      "fname": "open-notebook.emi",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297706,
+      "created": 1751830297706,
+      "id": "12pqs6ubpfafuy3eh7scq8x",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "ty6a4uhmb8qf9ospo7hwdef",
+        "a2m7rme8y788pxytrag1t9m"
+      ],
+      "parent": "cg7slewy3y8h81yvqfao1xt",
+      "data": {},
+      "title": "Emi"
+    },
+    "a2m7rme8y788pxytrag1t9m": {
+      "fname": "open-notebook.emi.pmallard",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297707,
+      "created": 1751830297707,
+      "id": "a2m7rme8y788pxytrag1t9m",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "nn8g8h3ddjhe27mxlzkbzmu"
+      ],
+      "parent": "12pqs6ubpfafuy3eh7scq8x",
+      "data": {},
+      "title": "Pmallard"
+    },
+    "nn8g8h3ddjhe27mxlzkbzmu": {
+      "fname": "open-notebook.emi.pmallard.2024",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297707,
+      "created": 1751830297707,
+      "id": "nn8g8h3ddjhe27mxlzkbzmu",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "x24zqx5s9pxr91khedz6ri6",
+        "djoy99s6467zc5v5owcs62d",
+        "krauzmiwrgd4bn4tflda2al"
+      ],
+      "parent": "a2m7rme8y788pxytrag1t9m",
+      "data": {},
+      "title": "2024"
+    },
+    "krauzmiwrgd4bn4tflda2al": {
+      "fname": "open-notebook.emi.pmallard.2024.10",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297708,
+      "created": 1751830297708,
+      "id": "krauzmiwrgd4bn4tflda2al",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "fvi2bh4uisut81x5q21bjf0"
+      ],
+      "parent": "nn8g8h3ddjhe27mxlzkbzmu",
+      "data": {},
+      "title": "10"
+    },
+    "fvi2bh4uisut81x5q21bjf0": {
+      "id": "fvi2bh4uisut81x5q21bjf0",
+      "title": "2024-10-07",
+      "desc": "",
+      "updated": 1729082141731,
+      "created": 1728310543723,
+      "traitIds": [
+        "open-notebook-emi-pmallard"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.pmallard.2024.10.07",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "cc13bb417e1c695fd0361b8857472c10",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.10.07",
+            "id": "fvi2bh4uisut81x5q21bjf0",
+            "vaultName": "dendron-emi"
+          },
+          "value": "website.hugo",
+          "position": {
+            "start": {
+              "line": 15,
+              "column": 45,
+              "offset": 250
+            },
+            "end": {
+              "line": 15,
+              "column": 61,
+              "offset": 266
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "website.hugo"
+          }
+        }
+      ],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 28,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 36,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 37,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 38,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "krauzmiwrgd4bn4tflda2al",
+      "data": {}
+    },
+    "djoy99s6467zc5v5owcs62d": {
+      "fname": "open-notebook.emi.pmallard.2024.07",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297707,
+      "created": 1751830297707,
+      "id": "djoy99s6467zc5v5owcs62d",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "o2q8t2o2oaa2ldkf8u4bhm3"
+      ],
+      "parent": "nn8g8h3ddjhe27mxlzkbzmu",
+      "data": {},
+      "title": "07"
+    },
+    "o2q8t2o2oaa2ldkf8u4bhm3": {
+      "id": "o2q8t2o2oaa2ldkf8u4bhm3",
+      "title": "2024-07-02",
+      "desc": "",
+      "updated": 1719931554057,
+      "created": 1719922654247,
+      "traitIds": [
+        "open-notebook-emi-pmallard"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.pmallard.2024.07.02",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "4e6089909cd94408bbaaaa42457c1894",
+      "links": [],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        },
+        "discussion-tarcisio-luca-disha": {
+          "type": "header",
+          "text": "Discussion Tarcisio, Luca, Disha",
+          "value": "discussion-tarcisio-luca-disha",
+          "line": 29,
+          "column": 0,
+          "depth": 3
+        },
+        "meeting-michael-j": {
+          "type": "header",
+          "text": "Meeting Michael J",
+          "value": "meeting-michael-j",
+          "line": 42,
+          "column": 0,
+          "depth": 3
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 71,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 73,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 74,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 75,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 78,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "djoy99s6467zc5v5owcs62d",
+      "data": {}
+    },
+    "x24zqx5s9pxr91khedz6ri6": {
+      "fname": "open-notebook.emi.pmallard.2024.06",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297707,
+      "created": 1751830297707,
+      "id": "x24zqx5s9pxr91khedz6ri6",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "9rkr1eqpf24vq8iw30j2fdw",
+        "ui5ilal57zv9w5cjdj3u45a",
+        "s024v9r9xzbpv07fn7oj4my",
+        "pbu4snep5ly3nbpfg8gd8dl"
+      ],
+      "parent": "nn8g8h3ddjhe27mxlzkbzmu",
+      "data": {},
+      "title": "06"
+    },
+    "pbu4snep5ly3nbpfg8gd8dl": {
+      "id": "pbu4snep5ly3nbpfg8gd8dl",
+      "title": "2024-06-28",
+      "desc": "",
+      "updated": 1719559741656,
+      "created": 1719558052927,
+      "traitIds": [
+        "open-notebook-emi-pmallard"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.pmallard.2024.06.28",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "ee91a7e9f9269abfe14ec0873a0a6d7b",
+      "links": [],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 28,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 36,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 37,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 38,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "x24zqx5s9pxr91khedz6ri6",
+      "data": {}
+    },
+    "s024v9r9xzbpv07fn7oj4my": {
+      "id": "s024v9r9xzbpv07fn7oj4my",
+      "title": "2024-06-18",
+      "desc": "",
+      "updated": 1718717398056,
+      "created": 1718717398056,
+      "traitIds": [
+        "open-notebook-emi-pmallard"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.pmallard.2024.06.18",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "5a463c7a14364ff95394eb3c149ae813",
+      "links": [],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 31,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 32,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 33,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 36,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "x24zqx5s9pxr91khedz6ri6",
+      "data": {}
+    },
+    "ui5ilal57zv9w5cjdj3u45a": {
+      "id": "ui5ilal57zv9w5cjdj3u45a",
+      "title": "2024-06-05",
+      "desc": "",
+      "updated": 1717600253778,
+      "created": 1717600219973,
+      "traitIds": [
+        "open-notebook-emi-pmallard"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.pmallard.2024.06.05",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "7f754de96ba97905d22380af97691b14",
+      "links": [],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 31,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 33,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 36,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 38,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 39,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 40,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 43,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "x24zqx5s9pxr91khedz6ri6",
+      "data": {}
+    },
+    "9rkr1eqpf24vq8iw30j2fdw": {
+      "id": "9rkr1eqpf24vq8iw30j2fdw",
+      "title": "2024-06-03",
+      "desc": "",
+      "updated": 1717405090391,
+      "created": 1717404543365,
+      "traitIds": [
+        "open-notebook-emi-pmallard"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.pmallard.2024.06.03",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "b6ff82c345993b04c3e0f493d2512777",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.EarthMetabolomeInitiative",
+          "alias": "#EarthMetabolomeInitiative",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 1,
+              "offset": 1804
+            },
+            "end": {
+              "line": 37,
+              "column": 27,
+              "offset": 1830
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.EarthMetabolomeInitiative"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.Biodiversity",
+          "alias": "#Biodiversity",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 28,
+              "offset": 1831
+            },
+            "end": {
+              "line": 37,
+              "column": 41,
+              "offset": 1844
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.Biodiversity"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.Chemodiversity",
+          "alias": "#Chemodiversity",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 42,
+              "offset": 1845
+            },
+            "end": {
+              "line": 37,
+              "column": 57,
+              "offset": 1860
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.Chemodiversity"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.Sustainability",
+          "alias": "#Sustainability",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 58,
+              "offset": 1861
+            },
+            "end": {
+              "line": 37,
+              "column": 73,
+              "offset": 1876
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.Sustainability"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.LifeSciences",
+          "alias": "#LifeSciences",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 74,
+              "offset": 1877
+            },
+            "end": {
+              "line": 37,
+              "column": 87,
+              "offset": 1890
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.LifeSciences"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.Conservation",
+          "alias": "#Conservation",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 88,
+              "offset": 1891
+            },
+            "end": {
+              "line": 37,
+              "column": 101,
+              "offset": 1904
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.Conservation"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.LinkedOpenData",
+          "alias": "#LinkedOpenData",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 102,
+              "offset": 1905
+            },
+            "end": {
+              "line": 37,
+              "column": 117,
+              "offset": 1920
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.LinkedOpenData"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "tags.Metabolomics",
+          "alias": "#Metabolomics",
+          "position": {
+            "start": {
+              "line": 37,
+              "column": 118,
+              "offset": 1921
+            },
+            "end": {
+              "line": 37,
+              "column": 131,
+              "offset": 1934
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.Metabolomics"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.06.03",
+            "id": "9rkr1eqpf24vq8iw30j2fdw",
+            "vaultName": "dendron-emi"
+          },
+          "value": "open-notebook.dbgi.setup",
+          "position": {
+            "start": {
+              "line": 45,
+              "column": 60,
+              "offset": 2017
+            },
+            "end": {
+              "line": 45,
+              "column": 88,
+              "offset": 2045
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "open-notebook.dbgi.setup"
+          }
+        }
+      ],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "draft-of-first-post-for-the-emi-linkedin-page": {
+          "type": "header",
+          "text": "Draft of first post for the EMI LinkedIn page",
+          "value": "draft-of-first-post-for-the-emi-linkedin-page",
+          "line": 23,
+          "column": 0,
+          "depth": 3
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 49,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 51,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 55,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 57,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 59,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 60,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 61,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 64,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "x24zqx5s9pxr91khedz6ri6",
+      "data": {}
+    },
+    "ty6a4uhmb8qf9ospo7hwdef": {
+      "fname": "open-notebook.emi.mjopiti",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297706,
+      "created": 1751830297706,
+      "id": "ty6a4uhmb8qf9ospo7hwdef",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "epjg83l33ub4x2fstxamf2n"
+      ],
+      "parent": "12pqs6ubpfafuy3eh7scq8x",
+      "data": {},
+      "title": "Mjopiti"
+    },
+    "epjg83l33ub4x2fstxamf2n": {
+      "fname": "open-notebook.emi.mjopiti.2024",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297706,
+      "created": 1751830297706,
+      "id": "epjg83l33ub4x2fstxamf2n",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "50maxge0x7igu7ja110si2c"
+      ],
+      "parent": "ty6a4uhmb8qf9ospo7hwdef",
+      "data": {},
+      "title": "2024"
+    },
+    "50maxge0x7igu7ja110si2c": {
+      "fname": "open-notebook.emi.mjopiti.2024.07",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297706,
+      "created": 1751830297706,
+      "id": "50maxge0x7igu7ja110si2c",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "v5zls2vytueekq9twor2qck",
+        "w1apexds30hsjxfdn3fqb08",
+        "zap4g0jyk4vokt4izqosvlw"
+      ],
+      "parent": "epjg83l33ub4x2fstxamf2n",
+      "data": {},
+      "title": "07"
+    },
+    "zap4g0jyk4vokt4izqosvlw": {
+      "id": "zap4g0jyk4vokt4izqosvlw",
+      "title": "2024-07-05",
+      "desc": "",
+      "updated": 1720172122733,
+      "created": 1720171753743,
+      "traitIds": [
+        "open-notebook-emi-mjopiti"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.mjopiti.2024.07.05",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "430a8c60bce72a14059f8167dfc7e25b",
+      "links": [],
+      "anchors": {
+        "this-is-michaels-emi-open-notebook": {
+          "type": "header",
+          "text": "This is Michael's EMI open-notebook.",
+          "value": "this-is-michaels-emi-open-notebook",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 15,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 17,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "50maxge0x7igu7ja110si2c",
+      "data": {}
+    },
+    "w1apexds30hsjxfdn3fqb08": {
+      "id": "w1apexds30hsjxfdn3fqb08",
+      "title": "2024-07-04",
+      "desc": "",
+      "updated": 1720107838217,
+      "created": 1720105488247,
+      "traitIds": [
+        "open-notebook-emi-mjopiti"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.mjopiti.2024.07.04",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "9262596adcbb3a98a9243a9ed18b1dcc",
+      "links": [],
+      "anchors": {
+        "this-is-michaels-emi-open-notebook": {
+          "type": "header",
+          "text": "This is Michael's EMI open-notebook.",
+          "value": "this-is-michaels-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "batchstep-structure": {
+          "type": "header",
+          "text": "Batchstep structure",
+          "value": "batchstep-structure",
+          "line": 31,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 44,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 52,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 53,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 54,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 57,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "50maxge0x7igu7ja110si2c",
+      "data": {}
+    },
+    "v5zls2vytueekq9twor2qck": {
+      "id": "v5zls2vytueekq9twor2qck",
+      "title": "2024-07-03",
+      "desc": "",
+      "updated": 1720012918829,
+      "created": 1720008914994,
+      "traitIds": [
+        "open-notebook-emi-mjopiti"
+      ],
+      "custom": {},
+      "fname": "open-notebook.emi.mjopiti.2024.07.03",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "926a79e5af315e6e1fa412ea86d36803",
+      "links": [],
+      "anchors": {
+        "this-is-michaels-emi-open-notebook": {
+          "type": "header",
+          "text": "This is Michael's EMI open-notebook.",
+          "value": "this-is-michaels-emi-open-notebook",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "file-structure": {
+          "type": "header",
+          "text": "File structure",
+          "value": "file-structure",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 37,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 39,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 95,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 97,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 98,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 99,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 102,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "50maxge0x7igu7ja110si2c",
+      "data": {}
+    },
+    "3yuaegcggymmvr8og84zkur": {
+      "fname": "templates",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297704,
+      "created": 1751830297704,
+      "id": "3yuaegcggymmvr8og84zkur",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "8em2g3rdu8v305l3exwq6s6"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Templates"
+    },
+    "8em2g3rdu8v305l3exwq6s6": {
+      "fname": "templates.open-notebook",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297704,
+      "created": 1751830297704,
+      "id": "8em2g3rdu8v305l3exwq6s6",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "amj45ennitdakrua4rvvbrx",
+        "y4c7m6a3ut7gjtwewzcbxwn"
+      ],
+      "parent": "3yuaegcggymmvr8og84zkur",
+      "data": {},
+      "title": "Open Notebook"
+    },
+    "y4c7m6a3ut7gjtwewzcbxwn": {
+      "fname": "templates.open-notebook.emi",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297705,
+      "created": 1751830297705,
+      "id": "y4c7m6a3ut7gjtwewzcbxwn",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "0wos8p8ksf7xckz27k0mswp"
+      ],
+      "parent": "8em2g3rdu8v305l3exwq6s6",
+      "data": {},
+      "title": "Emi"
+    },
+    "0wos8p8ksf7xckz27k0mswp": {
+      "id": "0wos8p8ksf7xckz27k0mswp",
+      "title": "Pmallard",
+      "desc": "",
+      "updated": 1717404523000,
+      "created": 1717404432131,
+      "custom": {},
+      "fname": "templates.open-notebook.emi.pmallard",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "5e486ec25ad56720f276cd46e5c85386",
+      "links": [],
+      "anchors": {
+        "this-is-pmas-emi-open-notebook": {
+          "type": "header",
+          "text": "This is PMA's EMI open-notebook.",
+          "value": "this-is-pmas-emi-open-notebook",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "have-a-look-at-the-emi-discussion-forum": {
+          "type": "header",
+          "text": "Have a look at the EMI discussion forum",
+          "value": "have-a-look-at-the-emi-discussion-forum",
+          "line": 14,
+          "column": 0,
+          "depth": 3
+        },
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "-1": {
+          "type": "header",
+          "text": "",
+          "value": "-1",
+          "line": 17,
+          "column": 0,
+          "depth": 3
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "paused": {
+          "type": "header",
+          "text": "Paused",
+          "value": "paused",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow-one-day--or-never": {
+          "type": "header",
+          "text": "Todo tomorrow, one day ... or never",
+          "value": "todo-tomorrow-one-day--or-never",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        },
+        "-2": {
+          "type": "header",
+          "text": "",
+          "value": "-2",
+          "line": 29,
+          "column": 0,
+          "depth": 3
+        },
+        "-3": {
+          "type": "header",
+          "text": "",
+          "value": "-3",
+          "line": 30,
+          "column": 0,
+          "depth": 3
+        },
+        "-4": {
+          "type": "header",
+          "text": "",
+          "value": "-4",
+          "line": 31,
+          "column": 0,
+          "depth": 3
+        },
+        "today-i-learned-that": {
+          "type": "header",
+          "text": "Today I learned that",
+          "value": "today-i-learned-that",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "y4c7m6a3ut7gjtwewzcbxwn",
+      "data": {}
+    },
+    "amj45ennitdakrua4rvvbrx": {
+      "fname": "templates.open-notebook.dbgi",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297705,
+      "created": 1751830297705,
+      "id": "amj45ennitdakrua4rvvbrx",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "mz59v1zr7grqghkinjmk034"
+      ],
+      "parent": "8em2g3rdu8v305l3exwq6s6",
+      "data": {},
+      "title": "Dbgi"
+    },
+    "mz59v1zr7grqghkinjmk034": {
+      "id": "mz59v1zr7grqghkinjmk034",
+      "title": "Open Notebook Mvisani",
+      "desc": "",
+      "updated": 1719324421258,
+      "created": 1675937670620,
+      "custom": {},
+      "fname": "templates.open-notebook.dbgi.mvisani",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "7dd6f1670fe5b429f49b37be1c9c7824",
+      "links": [],
+      "anchors": {
+        "this-is-marcos-daily-open-notebook": {
+          "type": "header",
+          "text": "This is Marco's daily open-notebook.",
+          "value": "this-is-marcos-daily-open-notebook",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow": {
+          "type": "header",
+          "text": "Todo tomorrow",
+          "value": "todo-tomorrow",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "amj45ennitdakrua4rvvbrx",
+      "data": {}
+    },
+    "em044ww0x12gvshkq9s1gp6": {
+      "fname": "website",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297703,
+      "created": 1751830297703,
+      "id": "em044ww0x12gvshkq9s1gp6",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "b72s2o287supid1wnu0o30i"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Website"
+    },
+    "b72s2o287supid1wnu0o30i": {
+      "id": "b72s2o287supid1wnu0o30i",
+      "title": "Hugo",
+      "desc": "",
+      "updated": 1729500400784,
+      "created": 1729082115661,
+      "custom": {},
+      "fname": "website.hugo",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "ce504bd5741ac697651d310743e023f4",
+      "links": [
+        {
+          "from": {
+            "fname": "open-notebook.emi.pmallard.2024.10.07",
+            "id": "fvi2bh4uisut81x5q21bjf0",
+            "vaultName": "dendron-emi"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 15,
+              "column": 45,
+              "offset": 250
+            },
+            "end": {
+              "line": 15,
+              "column": 61,
+              "offset": 266
+            },
+            "indent": []
+          },
+          "value": "website.hugo"
+        }
+      ],
+      "anchors": {
+        "": {
+          "type": "header",
+          "text": "",
+          "value": "",
+          "line": 134,
+          "column": 0,
+          "depth": 6
+        },
+        "type-members": {
+          "type": "header",
+          "text": "type: members",
+          "value": "type-members",
+          "line": 450,
+          "column": 0,
+          "depth": 2
+        },
+        "type-members-1": {
+          "type": "header",
+          "text": "type: members",
+          "value": "type-members-1",
+          "line": 473,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "em044ww0x12gvshkq9s1gp6",
+      "data": {}
+    },
+    "smclm9qks60i3brdytv436w": {
+      "fname": "monorepo",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1751830297701,
+      "created": 1751830297701,
+      "id": "smclm9qks60i3brdytv436w",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "zurlb9xvgq0nac4vckzusam",
+        "6sunjqumyp68ibjz7e4tx42",
+        "9lrxbu977wdl7qo6qxz1mkx"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Monorepo"
+    },
+    "9lrxbu977wdl7qo6qxz1mkx": {
+      "id": "9lrxbu977wdl7qo6qxz1mkx",
+      "title": "Web Common",
+      "desc": "",
+      "updated": 1719323693593,
+      "created": 1719323470818,
+      "custom": {},
+      "fname": "monorepo.Web-Common",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "fc7e244e5c9b7821f1312a9b02d81cc4",
+      "links": [],
+      "anchors": {
+        "monorepo--web-common": {
+          "type": "header",
+          "text": "Monorepo : Web-Common",
+          "value": "monorepo--web-common",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "smclm9qks60i3brdytv436w",
+      "data": {}
+    },
+    "6sunjqumyp68ibjz7e4tx42": {
+      "id": "6sunjqumyp68ibjz7e4tx42",
+      "title": "Frontend",
+      "desc": "",
+      "updated": 1719323428789,
+      "created": 1719316421481,
+      "custom": {},
+      "fname": "monorepo.Frontend",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "34290854e7f1e65ac471fef993266647",
+      "links": [],
+      "anchors": {
+        "monorepo--frontend": {
+          "type": "header",
+          "text": "Monorepo : Frontend",
+          "value": "monorepo--frontend",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "src": {
+          "type": "header",
+          "text": "src",
+          "value": "src",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "api": {
+          "type": "header",
+          "text": "api",
+          "value": "api",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "components": {
+          "type": "header",
+          "text": "components",
+          "value": "components",
+          "line": 15,
+          "column": 0,
+          "depth": 3
+        },
+        "badge": {
+          "type": "header",
+          "text": "badge",
+          "value": "badge",
+          "line": 18,
+          "column": 0,
+          "depth": 4
+        },
+        "forms": {
+          "type": "header",
+          "text": "forms",
+          "value": "forms",
+          "line": 21,
+          "column": 0,
+          "depth": 4
+        },
+        "pages": {
+          "type": "header",
+          "text": "pages",
+          "value": "pages",
+          "line": 24,
+          "column": 0,
+          "depth": 3
+        },
+        "styles": {
+          "type": "header",
+          "text": "styles",
+          "value": "styles",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "smclm9qks60i3brdytv436w",
+      "data": {}
+    },
+    "zurlb9xvgq0nac4vckzusam": {
+      "id": "zurlb9xvgq0nac4vckzusam",
+      "title": "Backend",
+      "desc": "",
+      "updated": 1719306973256,
+      "created": 1719241390631,
+      "custom": {},
+      "fname": "monorepo.Backend",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "623debfc17121eb6d2734ea683253c7b",
+      "links": [],
+      "anchors": {
+        "monorepo--backend": {
+          "type": "header",
+          "text": "Monorepo : Backend",
+          "value": "monorepo--backend",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "constraint_checkers": {
+          "type": "header",
+          "text": "constraint_checkers",
+          "value": "constraint_checkers",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "db_data": {
+          "type": "header",
+          "text": "db_data",
+          "value": "db_data",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "migrations": {
+          "type": "header",
+          "text": "migrations",
+          "value": "migrations",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "src": {
+          "type": "header",
+          "text": "src",
+          "value": "src",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "api": {
+          "type": "header",
+          "text": "api",
+          "value": "api",
+          "line": 27,
+          "column": 0,
+          "depth": 3
+        },
+        "oauth": {
+          "type": "header",
+          "text": "oauth",
+          "value": "oauth",
+          "line": 28,
+          "column": 0,
+          "depth": 4
+        },
+        "ws": {
+          "type": "header",
+          "text": "ws",
+          "value": "ws",
+          "line": 31,
+          "column": 0,
+          "depth": 4
+        },
+        "database": {
+          "type": "header",
+          "text": "database",
+          "value": "database",
+          "line": 34,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "smclm9qks60i3brdytv436w",
+      "data": {}
+    },
+    "yvialv0y265tyn1u4xxygn6": {
+      "id": "yvialv0y265tyn1u4xxygn6",
+      "title": "Qc",
+      "desc": "",
+      "updated": 1744363747218,
+      "created": 1744363717461,
+      "custom": {},
+      "fname": "qc",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "225cc83e23ec3d59c5b7462980f530b5",
+      "links": [],
+      "anchors": {
+        "softwares-for-qc-and-sst-assesment": {
+          "type": "header",
+          "text": "Softwares for QC and SST assesment",
+          "value": "softwares-for-qc-and-sst-assesment",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "fzeg276w1meifz5qyccsd4s": {
+      "id": "fzeg276w1meifz5qyccsd4s",
+      "title": "Offline Mode",
+      "desc": "",
+      "updated": 1736244286175,
+      "created": 1736244203969,
+      "custom": {},
+      "fname": "offline-mode",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "40c91bd88730e822ae85067e66237b7e",
+      "links": [],
+      "anchors": {
+        "meshtastic": {
+          "type": "header",
+          "text": "Meshtastic",
+          "value": "meshtastic",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "gz9usdkc2az543npdnopxrs": {
+      "id": "gz9usdkc2az543npdnopxrs",
+      "title": "Metabolinkai",
+      "desc": "",
+      "updated": 1751364189734,
+      "created": 1751364189734,
+      "custom": {},
+      "fname": "metabolinkai",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "3713ad7e60c45d2e7fe7355465db9eb1",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "gug1zw6wdzvta1evuzc5nut": {
+      "id": "gug1zw6wdzvta1evuzc5nut",
+      "title": "Manuals",
+      "desc": "",
+      "updated": 1718717434915,
+      "created": 1718717434915,
+      "custom": {},
+      "fname": "manuals",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "3c7e9a8a920390f619c8ea0b0b986166",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "s1ylfmp2pclqnwyr7c4kf7i": {
+      "id": "s1ylfmp2pclqnwyr7c4kf7i",
+      "title": "Library",
+      "desc": "",
+      "updated": 1743324011181,
+      "created": 1743323165900,
+      "custom": {},
+      "fname": "library",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "9dab69fc954bb380e99f7a093eea8b74",
+      "links": [],
+      "anchors": {
+        "creating-and-screening-natural-product-libraries": {
+          "type": "header",
+          "text": "Creating and screening natural product libraries",
+          "value": "creating-and-screening-natural-product-libraries",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "end-to-end-sample-tracking-in-the-laboratory-using-a-custom-internet-of-things-device": {
+          "type": "header",
+          "text": "End-to-End Sample Tracking in the Laboratory Using a Custom Internet of Things Device",
+          "value": "end-to-end-sample-tracking-in-the-laboratory-using-a-custom-internet-of-things-device",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "wieq3cosdoob8xyvaww1g9b",
+        "js3zr1l8susd8q04dts8j3m"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "js3zr1l8susd8q04dts8j3m": {
+      "id": "js3zr1l8susd8q04dts8j3m",
+      "title": "Standards",
+      "desc": "",
+      "updated": 1743324018797,
+      "created": 1743324015107,
+      "custom": {},
+      "fname": "library.standards",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "098b3fe93a9523a67db6b528ad5c2732",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "s1ylfmp2pclqnwyr7c4kf7i",
+      "data": {}
+    },
+    "wieq3cosdoob8xyvaww1g9b": {
+      "id": "wieq3cosdoob8xyvaww1g9b",
+      "title": "Automation",
+      "desc": "",
+      "updated": 1743331244775,
+      "created": 1743324777473,
+      "custom": {},
+      "fname": "library.automation",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "3ebdd1cd8e6e10d0df08a251e52a2aa5",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "5ifg53go4aqtry5x8fnxeqh"
+      ],
+      "parent": "s1ylfmp2pclqnwyr7c4kf7i",
+      "data": {}
+    },
+    "5ifg53go4aqtry5x8fnxeqh": {
+      "id": "5ifg53go4aqtry5x8fnxeqh",
+      "title": "Cherry Picking",
+      "desc": "",
+      "updated": 1743345523917,
+      "created": 1743337570661,
+      "custom": {},
+      "fname": "library.automation.cherry-picking",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "08fb9bcf3aa6e8fd1dae3bb94a56754b",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "wieq3cosdoob8xyvaww1g9b",
+      "data": {}
+    },
+    "4ukw0m9fnolvo16alfg228n": {
+      "id": "4ukw0m9fnolvo16alfg228n",
+      "title": "Fundings",
+      "desc": "",
+      "updated": 1751523294823,
+      "created": 1751523280414,
+      "custom": {},
+      "fname": "fundings",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "782abc844f85a4d6f784c022ad84ca9e",
+      "links": [],
+      "anchors": {
+        "novo-nordisk-foundation": {
+          "type": "header",
+          "text": "Novo Nordisk Foundation",
+          "value": "novo-nordisk-foundation",
+          "line": 7,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "ifd39krpwjbpoujotes8k8e": {
+      "id": "ifd39krpwjbpoujotes8k8e",
+      "title": "Food",
+      "desc": "",
+      "updated": 1751531703242,
+      "created": 1751531693523,
+      "custom": {},
+      "fname": "food",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "f3daf4a23b288aecc1749557dc616c28",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "l03fwlci5f5rdpot3v7oli6": {
+      "id": "l03fwlci5f5rdpot3v7oli6",
+      "title": "Dendron",
+      "desc": "",
+      "updated": 1671987314401,
+      "created": 1671987274473,
+      "custom": {},
+      "fname": "dendron",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "95a7bd113bafc75c2115229e9360ca36",
+      "links": [
+        {
+          "from": {
+            "fname": "root",
+            "id": "3rbfqqbp7pwbkdcrgc97u7l",
+            "vaultName": "dendron-emi"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 4,
+              "column": 69,
+              "offset": 257
+            },
+            "end": {
+              "line": 4,
+              "column": 83,
+              "offset": 271
+            },
+            "indent": []
+          },
+          "value": "dendron"
+        }
+      ],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "text": "Welcome to Dendron",
+          "value": "welcome-to-dendron",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "lookup": {
+          "type": "header",
+          "text": "Lookup",
+          "value": "lookup",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    },
+    "vrae5dt51ddpchgp8ny78cp": {
+      "id": "vrae5dt51ddpchgp8ny78cp",
+      "title": "Bioregistry",
+      "desc": "",
+      "updated": 1745237878953,
+      "created": 1745237878953,
+      "custom": {},
+      "fname": "bioregistry",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "557c9870b1bc1a9c8905941d7260f64c",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "3rbfqqbp7pwbkdcrgc97u7l",
+      "title": "The Earth Metabolome Initiative",
+      "desc": "",
+      "updated": 1671988421333,
+      "created": 1671985562294,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "dendron-emi"
+      },
+      "contentHash": "4a9583a0623e72b112fd491979429bc1",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "root",
+            "id": "3rbfqqbp7pwbkdcrgc97u7l",
+            "vaultName": "dendron-emi"
+          },
+          "value": "dendron",
+          "position": {
+            "start": {
+              "line": 4,
+              "column": 69,
+              "offset": 257
+            },
+            "end": {
+              "line": 4,
+              "column": 83,
+              "offset": 271
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "dendron"
+          }
+        }
+      ],
+      "anchors": {
+        "welcome-to-the-earth-metabolome-initiative-dendron-notes": {
+          "type": "header",
+          "text": "Welcome to the Earth Metabolome Initiative Dendron notes",
+          "value": "welcome-to-the-earth-metabolome-initiative-dendron-notes",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "what-is-the-earth-metabolome-initiative-": {
+          "type": "header",
+          "text": "What is the Earth Metabolome Initiative ?",
+          "value": "what-is-the-earth-metabolome-initiative-",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "how-is-it-related-to-the-digital-botanical-gardens-initiative-": {
+          "type": "header",
+          "text": "How is it related to the Digital Botanical Gardens Initiative ?",
+          "value": "how-is-it-related-to-the-digital-botanical-gardens-initiative-",
+          "line": 19,
+          "column": 0,
+          "depth": 1
+        },
+        "an-open-science-project": {
+          "type": "header",
+          "text": "An Open Science project",
+          "value": "an-open-science-project",
+          "line": 24,
+          "column": 0,
+          "depth": 1
+        },
+        "working-with-the-garage-door-up": {
+          "type": "header",
+          "text": "Working with the garage door up",
+          "value": "working-with-the-garage-door-up",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "open-notebook-science": {
+          "type": "header",
+          "text": "Open Notebook Science",
+          "value": "open-notebook-science",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "vrae5dt51ddpchgp8ny78cp",
+        "l03fwlci5f5rdpot3v7oli6",
+        "ifd39krpwjbpoujotes8k8e",
+        "4ukw0m9fnolvo16alfg228n",
+        "s1ylfmp2pclqnwyr7c4kf7i",
+        "gug1zw6wdzvta1evuzc5nut",
+        "gz9usdkc2az543npdnopxrs",
+        "fzeg276w1meifz5qyccsd4s",
+        "yvialv0y265tyn1u4xxygn6",
+        "smclm9qks60i3brdytv436w",
+        "em044ww0x12gvshkq9s1gp6",
+        "3yuaegcggymmvr8og84zkur",
+        "cg7slewy3y8h81yvqfao1xt"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "# Welcome to the Earth Metabolome Initiative Dendron notes\n\nDendron is the knowledge management system we use in the EMI. We use it specifically to manage notes, lab-books and share ideas.\nIf you want to know more about Dendron, have a look at this section [[dendron.md]].\n\n# What is the Earth Metabolome Initiative ?\n\n\n![](/assets/images/EMI_logo_round.png){max-width: 300px, display: block, margin: 0 auto}\n\nThe Earth Metabolome Initiative, abbreviated EMI, is an Open Science initiative and a global effort to profile the metabolic content of all currently known species on our planet (~2.3 million species). We are building the required computational, scientific and organizational architecture to establish the network of ressources and humans to advance in this massive undertaking. The EMI will explore the chemical foundations of Life for a better human society within a thriving biosphere.\n\n# How is it related to the Digital Botanical Gardens Initiative ?\n\nWe have started the Digital Botanical Gardens Initiative, abbreviated DBGI, as a pilot project for the EMI. You can find more details about the DBGI at <https://www.dbgi.org/dendron-dbgi>.\n\n\n# An Open Science project\n\n## Working with the garage door up\n\nA way of working briefly described by Andy Matuschak here https://notes.andymatuschak.org/z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu.\n\n![](/assets/images/2022-12-25-18-13-17.png){max-width: 400px}\n\n## Open Notebook Science\n\nIf we apply this \"working with the garage door up\" idea to a scientific research endeavor, we understand it as respecting the core concepts of open-science. These are in fact the principles of Open Notebook Science https://en.wikipedia.org/wiki/Open-notebook_science.\n\nFor the projects of the DBGI, we will follow this approach in order to share early ideas and results but also the less shiny parts of the research projects. \nExpect to find strange ideas, badly formulated text and poorly written code. However if you have time and interest, you should be able to participate at each step of the process. Hopefully, this will lead to enhanced collaboration and participation. Maybe yes, maybe not. Let's make it a methodological experiment!\n\nThe pages of this website are written in Markdown and hosted on Github. You can edit them by clicking on the \"Click here to edit this page on Github !\" link at the bottom of the page\n"
+    }
+  ],
+  "noteIndex": {
+    "id": "3rbfqqbp7pwbkdcrgc97u7l",
+    "title": "The Earth Metabolome Initiative",
+    "desc": "",
+    "updated": 1671988421333,
+    "created": 1671985562294,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "dendron-emi"
+    },
+    "contentHash": "4a9583a0623e72b112fd491979429bc1",
+    "links": [
+      {
+        "type": "wiki",
+        "from": {
+          "fname": "root",
+          "id": "3rbfqqbp7pwbkdcrgc97u7l",
+          "vaultName": "dendron-emi"
+        },
+        "value": "dendron",
+        "position": {
+          "start": {
+            "line": 4,
+            "column": 69,
+            "offset": 257
+          },
+          "end": {
+            "line": 4,
+            "column": 83,
+            "offset": 271
+          },
+          "indent": []
+        },
+        "xvault": false,
+        "sameFile": false,
+        "to": {
+          "fname": "dendron"
+        }
+      }
+    ],
+    "anchors": {
+      "welcome-to-the-earth-metabolome-initiative-dendron-notes": {
+        "type": "header",
+        "text": "Welcome to the Earth Metabolome Initiative Dendron notes",
+        "value": "welcome-to-the-earth-metabolome-initiative-dendron-notes",
+        "line": 7,
+        "column": 0,
+        "depth": 1
+      },
+      "what-is-the-earth-metabolome-initiative-": {
+        "type": "header",
+        "text": "What is the Earth Metabolome Initiative ?",
+        "value": "what-is-the-earth-metabolome-initiative-",
+        "line": 12,
+        "column": 0,
+        "depth": 1
+      },
+      "how-is-it-related-to-the-digital-botanical-gardens-initiative-": {
+        "type": "header",
+        "text": "How is it related to the Digital Botanical Gardens Initiative ?",
+        "value": "how-is-it-related-to-the-digital-botanical-gardens-initiative-",
+        "line": 19,
+        "column": 0,
+        "depth": 1
+      },
+      "an-open-science-project": {
+        "type": "header",
+        "text": "An Open Science project",
+        "value": "an-open-science-project",
+        "line": 24,
+        "column": 0,
+        "depth": 1
+      },
+      "working-with-the-garage-door-up": {
+        "type": "header",
+        "text": "Working with the garage door up",
+        "value": "working-with-the-garage-door-up",
+        "line": 26,
+        "column": 0,
+        "depth": 2
+      },
+      "open-notebook-science": {
+        "type": "header",
+        "text": "Open Notebook Science",
+        "value": "open-notebook-science",
+        "line": 32,
+        "column": 0,
+        "depth": 2
+      }
+    },
+    "children": [
+      "vrae5dt51ddpchgp8ny78cp",
+      "l03fwlci5f5rdpot3v7oli6",
+      "ifd39krpwjbpoujotes8k8e",
+      "4ukw0m9fnolvo16alfg228n",
+      "s1ylfmp2pclqnwyr7c4kf7i",
+      "gug1zw6wdzvta1evuzc5nut",
+      "gz9usdkc2az543npdnopxrs",
+      "fzeg276w1meifz5qyccsd4s",
+      "yvialv0y265tyn1u4xxygn6",
+      "smclm9qks60i3brdytv436w",
+      "em044ww0x12gvshkq9s1gp6",
+      "3yuaegcggymmvr8og84zkur",
+      "cg7slewy3y8h81yvqfao1xt"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "# Welcome to the Earth Metabolome Initiative Dendron notes\n\nDendron is the knowledge management system we use in the EMI. We use it specifically to manage notes, lab-books and share ideas.\nIf you want to know more about Dendron, have a look at this section [[dendron.md]].\n\n# What is the Earth Metabolome Initiative ?\n\n\n![](/assets/images/EMI_logo_round.png){max-width: 300px, display: block, margin: 0 auto}\n\nThe Earth Metabolome Initiative, abbreviated EMI, is an Open Science initiative and a global effort to profile the metabolic content of all currently known species on our planet (~2.3 million species). We are building the required computational, scientific and organizational architecture to establish the network of ressources and humans to advance in this massive undertaking. The EMI will explore the chemical foundations of Life for a better human society within a thriving biosphere.\n\n# How is it related to the Digital Botanical Gardens Initiative ?\n\nWe have started the Digital Botanical Gardens Initiative, abbreviated DBGI, as a pilot project for the EMI. You can find more details about the DBGI at <https://www.dbgi.org/dendron-dbgi>.\n\n\n# An Open Science project\n\n## Working with the garage door up\n\nA way of working briefly described by Andy Matuschak here https://notes.andymatuschak.org/z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu.\n\n![](/assets/images/2022-12-25-18-13-17.png){max-width: 400px}\n\n## Open Notebook Science\n\nIf we apply this \"working with the garage door up\" idea to a scientific research endeavor, we understand it as respecting the core concepts of open-science. These are in fact the principles of Open Notebook Science https://en.wikipedia.org/wiki/Open-notebook_science.\n\nFor the projects of the DBGI, we will follow this approach in order to share early ideas and results but also the less shiny parts of the research projects. \nExpect to find strange ideas, badly formulated text and poorly written code. However if you have time and interest, you should be able to participate at each step of the process. Hopefully, this will lead to enhanced collaboration and participation. Maybe yes, maybe not. Let's make it a methodological experiment!\n\nThe pages of this website are written in Markdown and hosted on Github. You can edit them by clicking on the \"Click here to edit this page on Github !\" link at the bottom of the page\n"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "dendron-emi"
+    }
+  ]
+}
