@@ -1,0 +1,513 @@
+<h1 id="hugo">Hugo<a aria-hidden="true" class="anchor-heading icon-link" href="#hugo"></a></h1>
+<ul>
+<li>
+<p>Looking into <a href="https://nickballou.com/blog/custom-wowchemy/">https://nickballou.com/blog/custom-wowchemy/</a> </p>
+</li>
+<li>
+<p>The idea is to replicate the membership page of the Open Traits Network (<a href="https://opentraits.org/members/">https://opentraits.org/members/</a>) on the EMI website.</p>
+</li>
+</ul>
+<p>Looking for old li_compact.html files </p>
+<ul>
+<li><a href="https://github.com/forrtproject/forrtproject.github.io/tree/eb55900da7da50390ca23a929794fde9073c7df5">https://github.com/forrtproject/forrtproject.github.io/tree/eb55900da7da50390ca23a929794fde9073c7df5</a></li>
+</ul>
+<p>This whole story turns out to be a bit more complicated than I thought. I will need to spend more time on this.</p>
+<p>First it seems that the wowchemy is now hugo blox.
+Second Hugo blox is not compatible with the latest version of Hugo.</p>
+<p>Switching hugo version is not has straightforward.
+Installing a specific version neither.</p>
+<p><a href="https://www.gigigatgat.ca/en/posts/install-specific-hugo-version/">https://www.gigigatgat.ca/en/posts/install-specific-hugo-version/</a></p>
+<p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.121.1">https://github.com/gohugoio/hugo/releases/tag/v0.121.1</a></p>
+<p>/Users/pma/.gem/ruby/3.3.5/bin:/Users/pma/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/bin:/Users/pma/.rubies/ruby-3.3.5/bin:/Users/pma/.pyenv/shims:/Users/pma/.nvm/versions/node/v17.8.0/bin:/Users/pma/.yarn/bin:/Users/pma/.config/yarn/global/node_modules/.bin:/Users/pma/.rbenv/shims:/Users/pma/.cargo/bin:/Users/pma/.local/bin:/usr/local/bin:/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/texlive/2023/bin/universal-darwin:/Users/pma/bin:/usr/local/bin:/Users/pma/mambaforge/lib/python3.9/site-packages:/usr/local/texlive/2023/bin/universal-darwin:/Users/pma/.nvm/versions/node/v17.8.0/bin:/Users/pma/.yarn/bin:/Users/pma/.config/yarn/global/node_modules/.bin:/Users/pma/.rbenv/shims:/Users/pma/.cargo/bin:/Users/pma/.local/bin:/Users/pma/mambaforge/bin:/Users/pma/mambaforge/condabin:/usr/local/bin:/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/texlive/2023/bin/universal-darwin:/Users/pma/bin:/usr/local/bin:/Users/pma/mambaforge/lib/python3.9/site-packages:/usr/local/texlive/2023/bin/universal-darwin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/quarto/bin:/Applications/iTerm.app/Contents/Resources/utilities</p>
+<p>How to embedd a map </p>
+<p><a href="https://blog.gpkb.org/posts/hugo-static-site-maps/">https://blog.gpkb.org/posts/hugo-static-site-maps/</a></p>
+<p>7.114334,46.777595,7.197247,46.822506</p>
+<p>pmtiles extract \
+<a href="https://build.protomaps.com/20241014.pmtiles">https://build.protomaps.com/20241014.pmtiles</a> \
+mymap.pmtiles \
+--bbox=7.114334,46.777595,7.197247,46.822506</p>
+<p><a href="https://osgav.run/">https://osgav.run/</a></p>
+<p>Hinode theme has a leaflet module <a href="https://gethinode.com/docs/getting-started/introduction/">https://gethinode.com/docs/getting-started/introduction/</a></p>
+<p>My leaflet-map.js</p>
+<p>const attribution = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+const tile = '<a href="https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&#x27;">https://tile.openstreetmap.org/{z}/{x}/{y}.png'</a></p>
+<p>document.querySelectorAll('div.leaflet-map').forEach(map => {
+const viewLat = map.getAttribute('data-leaflet-view-lat')
+const viewLong = map.getAttribute('data-leaflet-view-long')
+const zoom = map.getAttribute('data-leaflet-view-zoom')
+const popup = map.getAttribute('data-leaflet-popup-caption')
+const popupLat = map.getAttribute('data-leaflet-popup-lat')
+const popupLong = map.getAttribute('data-leaflet-popup-long')
+const view = [viewLat, viewLong]</p>
+<p>  if (viewLat === null || viewLong === null || zoom === null) {
+console.error('leaflet-map.js: expected lat, long, and zoom')
+} else {
+const bind = L.map(map).setView(view, zoom)
+L.tileLayer(tile, { attribution }).addTo(bind)</p>
+<pre><code>if (popup !== null &#x26;&#x26; popupLat !== null &#x26;&#x26; popupLong !== null) {
+  L.marker([popupLat, popupLong]).addTo(bind)
+    .bindPopup(popup)
+    .openPopup()
+}
+</code></pre>
+<p>  }
+})</p>
+<p>My layout/partial/assets/map.html</p>
+<!-- 
+    Copyright © 2024 The Hinode Team / Mark Dumay. All rights reserved.
+    Use of this source code is governed by The MIT License (MIT) that can be found in the LICENSE file.
+    Visit gethinode.com/license for more details.
+-->
+<p>{{ $error := false }}</p>
+<!-- Validate arguments -->
+<p>{{ if partial "utilities/IsInvalidArgs.html" (dict "structure" "map" "args" .Params) }}
+{{ errorf "Invalid arguments: %s" .Position -}}
+{{ $error = true }}
+{{ end }}</p>
+<!-- Initialize arguments -->
+<p>{{- $id := printf "leaflet-map-%d" .Ordinal -}}
+{{ with index . "id" }}
+{{ $id = . }}
+{{ end }}</p>
+<p>{{ $class := index . "class" | default "ratio ratio-16x9 w-100 mx-auto" }}</p>
+<p>{{ $error := false }}
+{{ $viewLat := 52.377 }}
+{{ $viewLong := 4.90 }}
+{{ $zoom := 13 }}
+{{ $popup := "" }}
+{{ $popupLat := ""  }}
+{{ $popupLong := "" }}</p>
+<p>{{- with index . "lat" }}{{ $viewLat = . }}{{ end -}}
+{{- with index . "long" }}{{ $viewLong = . }}{{ end -}}
+{{- with index . "zoom" }}{{ $zoom = . }}{{ end -}}
+{{- with index . "popup" }}{{ $popup = . }}{{ end -}}
+{{- with index . "popup-lat" }}{{ $popupLat = . }}{{ end -}}
+{{- with index . "popup-long" }}{{ $popupLong = . }}{{ end -}}</p>
+<!-- Main code -->
+<p>{{- if not $error -}}</p>
+<pre><code>&#x3C;div id="{{ $id }}" class="leaflet-map {{ $class }}"
+    {{ with $viewLat }}data-leaflet-view-lat="{{ . }}"{{ end }}
+    {{ with $viewLong }}data-leaflet-view-long="{{ . }}"{{ end }}
+    {{ with $zoom }}data-leaflet-view-zoom="{{ . }}"{{ end }}
+    {{ with $popup }}data-leaflet-popup-caption="{{ . }}"{{ end }}
+    {{ with $popupLat }}data-leaflet-popup-lat="{{ . }}"{{ end }}
+    {{ with $popupLong }}data-leaflet-popup-long="{{ . }}"{{ end }}>
+&#x3C;/div>
+</code></pre>
+<p>{{- end -}}</p>
+<h6 id=""><a aria-hidden="true" class="anchor-heading icon-link" href="#"></a></h6>
+<p>Frontmatter in a content file</p>
+<pre class="language-yaml"><code class="language-yaml">
+<span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie Allard
+<span class="token key atrule">firstname</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie
+<span class="token key atrule">lastname</span><span class="token punctuation">:</span> Allard
+<span class="token key atrule">institution</span><span class="token punctuation">:</span> COMMONS Lab<span class="token punctuation">,</span> Department of Biology<span class="token punctuation">,</span> University of Fribourg<span class="token punctuation">,</span> Switzerland
+<span class="token key atrule">email</span><span class="token punctuation">:</span> pierre<span class="token punctuation">-</span>marie.allard@unifr.ch
+<span class="token key atrule">orcid</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//orcid.org/0000<span class="token punctuation">-</span>0003<span class="token punctuation">-</span>3389<span class="token punctuation">-</span><span class="token number">2191</span>
+<span class="token key atrule">wikidata</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.wikidata.org/wiki/Q56451301
+<span class="token key atrule">scholia</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//scholia.toolforge.org/author/Q56451301
+<span class="token key atrule">thumbnail</span><span class="token punctuation">:</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> /img/sunrise.jpg
+  <span class="token key atrule">author</span><span class="token punctuation">:</span> Harris Vo
+  <span class="token key atrule">authorURL</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//unsplash.com/@hoanvokim
+  <span class="token key atrule">origin</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//unsplash.com/photos/ZX6BPboJrYk
+  <span class="token key atrule">originName</span><span class="token punctuation">:</span> Unsplash
+<span class="token key atrule">modules</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"leaflet"</span><span class="token punctuation">]</span>
+<span class="token key atrule">latitude</span><span class="token punctuation">:</span> <span class="token number">52.377</span>
+<span class="token key atrule">longitude</span><span class="token punctuation">:</span> <span class="token number">4.900</span>
+<span class="token key atrule">popup</span><span class="token punctuation">:</span> <span class="token string">"Amsterdam Central Station is it here?"</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> members
+<span class="token punctuation">---</span>
+
+</code></pre>
+<p>Such file in layouts/members/single/body.html</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token comment">&#x3C;!-- Left column: Member Information --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      {{- /* Display Member Information */ -}}
+      {{ with .Params.author }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>author-entry display-4 mb-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>strong</span><span class="token punctuation">></span></span>{{ . }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>strong</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>p</span><span class="token punctuation">></span></span>
+      {{ end }}
+  
+      {{- /* Display Institution, Email, ORCID, Wikidata, and Scholia */ -}}
+      {{ with .Params }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>metadata-list list-unstyled<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          {{ with .institution }}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>strong</span><span class="token punctuation">></span></span>Institution or place of work:<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>strong</span><span class="token punctuation">></span></span> {{ . }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>li</span><span class="token punctuation">></span></span>
+          {{ end }}
+          {{ with .email }}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>strong</span><span class="token punctuation">></span></span>Email:<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>strong</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mailto:{{ . }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ . }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>li</span><span class="token punctuation">></span></span>
+          {{ end }}
+          {{ with .orcid }}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>strong</span><span class="token punctuation">></span></span>ORCID:<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>strong</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ . }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>li</span><span class="token punctuation">></span></span>
+          {{ end }}
+          {{ with .wikidata }}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>strong</span><span class="token punctuation">></span></span>Wikidata:<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>strong</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ . }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>li</span><span class="token punctuation">></span></span>
+          {{ end }}
+          {{ with .scholia }}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>strong</span><span class="token punctuation">></span></span>Scholia:<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>strong</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ . }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>li</span><span class="token punctuation">></span></span>
+          {{ end }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>ul</span><span class="token punctuation">></span></span>
+      {{ end }}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  
+    <span class="token comment">&#x3C;!-- Right column: Thumbnail Image --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      {{- /* Extract thumbnail information */ -}}
+      {{ with .Params.thumbnail }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>post-thumbnail mb-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ .url }}<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Thumbnail<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>thumbnail-attribution<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            Photo by <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ .authorURL }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ .author }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>a</span><span class="token punctuation">></span></span> on 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ .origin }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ .originName }}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>a</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+      {{ end }}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  
+  <span class="token comment">&#x3C;!-- Map Section --></span>
+  {{- /* Render the Map using the Leaflet map partial */ -}}
+  {{ with .Params }}
+    {{ if and .latitude .longitude .popup }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>map-container mb-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        {{ partial "assets/map.html" (dict "lat" .latitude "long" .longitude "popup" .popup "popup-lat" .latitude "popup-long" .longitude) }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    {{ end }}
+  {{ end }}
+
+  
+  
+  {{- /* Render the rest of the content */ -}}
+  {{ partial "utilities/ProcessContent" (dict "page" .Page "raw" .RawContent) }}
+</code></pre>
+<p>and layouts/partials/assets/map.html</p>
+<pre class="language-html"><code class="language-html"><span class="token comment">&#x3C;!-- 
+    Copyright © 2024 The Hinode Team / Mark Dumay. All rights reserved.
+    Use of this source code is governed by The MIT License (MIT) that can be found in the LICENSE file.
+    Visit gethinode.com/license for more details.
+--></span>
+
+{{ $error := false }}
+
+<span class="token comment">&#x3C;!-- Validate arguments --></span>
+{{ if partial "utilities/IsInvalidArgs.html" (dict "structure" "map" "args" .Params) }}
+    {{ errorf "Invalid arguments: %s" .Position -}}
+    {{ $error = true }}
+{{ end }}
+
+<span class="token comment">&#x3C;!-- Initialize arguments --></span>
+
+{{- $id := printf "leaflet-map-%d" .Ordinal -}}
+{{ with index . "id" }}
+    {{ $id = . }}
+{{ end }}
+
+{{ $class := index . "class" | default "ratio ratio-16x9 w-100 mx-auto" }}
+
+{{ $error := false }}
+{{ $viewLat := 52.377 }}
+{{ $viewLong := 4.90 }}
+{{ $zoom := 13 }}
+{{ $popup := "" }}
+{{ $popupLat := ""  }}
+{{ $popupLong := "" }}
+
+{{- with index . "lat" }}{{ $viewLat = . }}{{ end -}}
+{{- with index . "long" }}{{ $viewLong = . }}{{ end -}}
+{{- with index . "zoom" }}{{ $zoom = . }}{{ end -}}
+{{- with index . "popup" }}{{ $popup = . }}{{ end -}}
+{{- with index . "popup-lat" }}{{ $popupLat = . }}{{ end -}}
+{{- with index . "popup-long" }}{{ $popupLong = . }}{{ end -}}
+
+<span class="token comment">&#x3C;!-- Main code --></span>
+{{- if not $error -}}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ $id }}<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leaflet-map {{ $class }}<span class="token punctuation">"</span></span>
+        <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$viewLat</span> <span class="token attr-name">}}data-leaflet-view-lat</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+        <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$viewLong</span> <span class="token attr-name">}}data-leaflet-view-long</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+        <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$zoom</span> <span class="token attr-name">}}data-leaflet-view-zoom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+        <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$popup</span> <span class="token attr-name">}}data-leaflet-popup-caption</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+        <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$popupLat</span> <span class="token attr-name">}}data-leaflet-popup-lat</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+        <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$popupLong</span> <span class="token attr-name">}}data-leaflet-popup-long</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+{{- end -}}
+</code></pre>
+<p>My leaflet-map.js </p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> attribution <span class="token operator">=</span> <span class="token string">'&#x26;copy; &#x3C;a href="https://www.openstreetmap.org/copyright">OpenStreetMap&#x3C;/a> contributors'</span>
+<span class="token keyword">const</span> tile <span class="token operator">=</span> <span class="token string">'https://tile.openstreetmap.org/{z}/{x}/{y}.png'</span>
+
+<span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'div.leaflet-map'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">forEach</span><span class="token punctuation">(</span><span class="token parameter">map</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> viewLat <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-leaflet-view-lat'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> viewLong <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-leaflet-view-long'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> zoom <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-leaflet-view-zoom'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> popup <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-leaflet-popup-caption'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> popupLat <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-leaflet-popup-lat'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> popupLong <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-leaflet-popup-long'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> view <span class="token operator">=</span> <span class="token punctuation">[</span>viewLat<span class="token punctuation">,</span> viewLong<span class="token punctuation">]</span>
+
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>viewLat <span class="token operator">===</span> <span class="token keyword null nil">null</span> <span class="token operator">||</span> viewLong <span class="token operator">===</span> <span class="token keyword null nil">null</span> <span class="token operator">||</span> zoom <span class="token operator">===</span> <span class="token keyword null nil">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">error</span><span class="token punctuation">(</span><span class="token string">'leaflet-map.js: expected lat, long, and zoom'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> bind <span class="token operator">=</span> <span class="token constant">L</span><span class="token punctuation">.</span><span class="token method function property-access">map</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">setView</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span> zoom<span class="token punctuation">)</span>
+    <span class="token constant">L</span><span class="token punctuation">.</span><span class="token method function property-access">tileLayer</span><span class="token punctuation">(</span>tile<span class="token punctuation">,</span> <span class="token punctuation">{</span> attribution <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">addTo</span><span class="token punctuation">(</span>bind<span class="token punctuation">)</span>
+
+    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>popup <span class="token operator">!==</span> <span class="token keyword null nil">null</span> <span class="token operator">&#x26;&#x26;</span> popupLat <span class="token operator">!==</span> <span class="token keyword null nil">null</span> <span class="token operator">&#x26;&#x26;</span> popupLong <span class="token operator">!==</span> <span class="token keyword null nil">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token constant">L</span><span class="token punctuation">.</span><span class="token method function property-access">marker</span><span class="token punctuation">(</span><span class="token punctuation">[</span>popupLat<span class="token punctuation">,</span> popupLong<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">addTo</span><span class="token punctuation">(</span>bind<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token method function property-access">bindPopup</span><span class="token punctuation">(</span>popup<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token method function property-access">openPopup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>With such set of scripts and partials, I can render a map on the member page.
+This map displays a single marker.</p>
+<p>I would like to be able to render multiple markers and their popup on the map.
+The expansion of the script should be able to handle single or multiple markers and popups.</p>
+<p>I thought that the frontmatter would look like this ?</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie Allard
+<span class="token key atrule">firstname</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie
+<span class="token key atrule">lastname</span><span class="token punctuation">:</span> Allard
+<span class="token key atrule">institution</span><span class="token punctuation">:</span> COMMONS Lab<span class="token punctuation">,</span> Department of Biology<span class="token punctuation">,</span> University of Fribourg<span class="token punctuation">,</span> Switzerland
+<span class="token key atrule">email</span><span class="token punctuation">:</span> pierre<span class="token punctuation">-</span>marie.allard@unifr.ch
+<span class="token key atrule">orcid</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//orcid.org/0000<span class="token punctuation">-</span>0003<span class="token punctuation">-</span>3389<span class="token punctuation">-</span><span class="token number">2191</span>
+<span class="token key atrule">wikidata</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.wikidata.org/wiki/Q56451301
+<span class="token key atrule">scholia</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//scholia.toolforge.org/author/Q56451301
+<span class="token key atrule">thumbnail</span><span class="token punctuation">:</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> /img/sunrise.jpg
+  <span class="token key atrule">author</span><span class="token punctuation">:</span> Harris Vo
+  <span class="token key atrule">authorURL</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//unsplash.com/@hoanvokim
+  <span class="token key atrule">origin</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//unsplash.com/photos/ZX6BPboJrYk
+  <span class="token key atrule">originName</span><span class="token punctuation">:</span> Unsplash
+<span class="token key atrule">modules</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"leaflet"</span><span class="token punctuation">]</span>
+<span class="token key atrule">latitude</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">52.377</span><span class="token punctuation">,</span> <span class="token number">52.378</span><span class="token punctuation">]</span>
+<span class="token key atrule">longitude</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">4.900</span><span class="token punctuation">,</span> <span class="token number">4.901</span><span class="token punctuation">]</span>
+<span class="token key atrule">popup</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"Amsterdam Central Station is it here?"</span><span class="token punctuation">,</span> <span class="token string">"Amsterdam Central Station is it here?"</span><span class="token punctuation">]</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> members
+<span class="token punctuation">---</span>
+</code></pre>
+<p>Could you help me adapt the previous script where it is needed ?</p>
+<p>Now I also have layouts/partials/assets/custom-map.html</p>
+<pre class="language-html"><code class="language-html">{{ $error := false }}
+
+{{/* Validate arguments */}}
+{{ if partial "utilities/IsInvalidArgs.html" (dict "structure" "custom-map" "args" . "group" "partial") }}
+  {{- errorf "partial [assets/list.html] - Invalid arguments" -}}
+  {{ $error = true }}
+{{ end }}
+
+{{/* Initialize arguments */}}
+{{- $list := .list -}}
+{{- $class := .class -}}
+
+{{/* Main code */}}
+{{ if not $error }}
+  {{- range $index, $item := $list }}
+    {{ with $item.Params }}
+      {{ if and $item.Params.latitude $item.Params.longitude $item.Params.popup }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-fluid p-0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>map-container mb-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            {{ partial "assets/map.html" (dict "lat" $item.Params.latitude "long" $item.Params.longitude "popup" $item.Params.popup "popup-lat" $item.Params.latitude "popup-long" $item.Params.longitude) }}
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+
+        {{- /* Stops after the first valid item */ -}}
+        {{- break -}}
+
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+</code></pre>
+<p>Which is able to iterate over a list of items.
+For now it is just a draft and it breaks after one iteration.
+Could you help me adapt the previous script where it is needed so that it iterates over the list of items and displays all the markers and popups on one single map ?</p>
+<p>In this script.</p>
+<p>const attribution = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+const tile = '<a href="https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&#x27;">https://tile.openstreetmap.org/{z}/{x}/{y}.png'</a></p>
+<p>document.querySelectorAll('div.leaflet-map').forEach(map => {
+const viewLat = map.getAttribute('data-leaflet-view-lat')
+const viewLong = map.getAttribute('data-leaflet-view-long')
+const zoom = map.getAttribute('data-leaflet-view-zoom')
+const popupData = map.getAttribute('data-leaflet-popup-caption')  // This will now store a JSON string</p>
+<p>  if (viewLat === null || viewLong === null || zoom === null) {
+console.error('leaflet-map.js: expected lat, long, and zoom')
+} else {
+const bind = L.map(map).setView([viewLat, viewLong], zoom)
+L.tileLayer(tile, { attribution }).addTo(bind)</p>
+<pre><code>// Parse popupData as an array
+const popups = popupData ? JSON.parse(popupData) : []
+const popupLatitudes = map.getAttribute('data-leaflet-popup-lat') ? JSON.parse(map.getAttribute('data-leaflet-popup-lat')) : []
+const popupLongitudes = map.getAttribute('data-leaflet-popup-long') ? JSON.parse(map.getAttribute('data-leaflet-popup-long')) : []
+
+if (popups.length &#x26;&#x26; popupLatitudes.length &#x26;&#x26; popupLongitudes.length) {
+  for (let i = 0; i &#x3C; popups.length; i++) {
+    if (popupLatitudes[i] &#x26;&#x26; popupLongitudes[i]) {
+      L.marker([popupLatitudes[i], popupLongitudes[i]]).addTo(bind)
+        .bindPopup(popups[i])
+        .openPopup()
+    }
+  }
+}
+</code></pre>
+<p>  }
+})</p>
+<p>Is it possible to make sure that this will work for entries with a single marker and popup as well as for entries with multiple markers and popups ?</p>
+<p>That is for frontmatters such </p>
+<p>title: Pierre-Marie Allard
+firstname: Pierre-Marie
+lastname: Allard
+institution: COMMONS Lab, Department of Biology, University of Fribourg, Switzerland
+email: <a href="/dendron-emi/mailto:pierre-marie.allard@unifr.ch">pierre-marie.allard@unifr.ch</a>
+orcid: <a href="https://orcid.org/0000-0003-3389-2191">https://orcid.org/0000-0003-3389-2191</a>
+wikidata: <a href="https://www.wikidata.org/wiki/Q56451301">https://www.wikidata.org/wiki/Q56451301</a>
+scholia: <a href="https://scholia.toolforge.org/author/Q56451301">https://scholia.toolforge.org/author/Q56451301</a>
+thumbnail:
+url: /img/sunrise.jpg
+author: Harris Vo
+authorURL: <a href="https://unsplash.com/@hoanvokim">https://unsplash.com/@hoanvokim</a>
+origin: <a href="https://unsplash.com/photos/ZX6BPboJrYk">https://unsplash.com/photos/ZX6BPboJrYk</a>
+originName: Unsplash
+modules: ["leaflet"]
+latitude: [52.377, 52.378]
+longitude: [4.900, 4.901]
+popup: ["Amsterdam Central Station is it here?", "Amsterdam Central Station is it here?"]</p>
+<h2 id="type-members">type: members<a aria-hidden="true" class="anchor-heading icon-link" href="#type-members"></a></h2>
+<p>or</p>
+<p>title: Pierre-Marie Allard
+firstname: Pierre-Marie
+lastname: Allard
+institution: COMMONS Lab, Department of Biology, University of Fribourg, Switzerland
+email: <a href="/dendron-emi/mailto:pierre-marie.allard@unifr.ch">pierre-marie.allard@unifr.ch</a>
+orcid: <a href="https://orcid.org/0000-0003-3389-2191">https://orcid.org/0000-0003-3389-2191</a>
+wikidata: <a href="https://www.wikidata.org/wiki/Q56451301">https://www.wikidata.org/wiki/Q56451301</a>
+scholia: <a href="https://scholia.toolforge.org/author/Q56451301">https://scholia.toolforge.org/author/Q56451301</a>
+thumbnail:
+url: /img/sunrise.jpg
+author: Harris Vo
+authorURL: <a href="https://unsplash.com/@hoanvokim">https://unsplash.com/@hoanvokim</a>
+origin: <a href="https://unsplash.com/photos/ZX6BPboJrYk">https://unsplash.com/photos/ZX6BPboJrYk</a>
+originName: Unsplash
+modules: ["leaflet"]
+latitude: 52.377
+longitude: 4.900
+popup: "Amsterdam Central Station is it here?"</p>
+<h2 id="type-members-1">type: members<a aria-hidden="true" class="anchor-heading icon-link" href="#type-members-1"></a></h2>
+<p>OK this doesnt work. I will need to find a way to make it work.</p>
+<p>Lets rather work on the map.html</p>
+<p>Currently the map.html is </p>
+<pre class="language-html"><code class="language-html"><span class="token comment">&#x3C;!-- 
+    Copyright © 2024 The Hinode Team / Mark Dumay. All rights reserved.
+    Use of this source code is governed by The MIT License (MIT) that can be found in the LICENSE file.
+    Visit gethinode.com/license for more details.
+--></span>
+
+{{ $error := false }}
+
+<span class="token comment">&#x3C;!-- Validate arguments --></span>
+{{ if partial "utilities/IsInvalidArgs.html" (dict "structure" "map" "args" .Params) }}
+    {{ errorf "Invalid arguments: %s" .Position -}}
+    {{ $error = true }}
+{{ end }}
+
+<span class="token comment">&#x3C;!-- Initialize arguments --></span>
+
+{{- $id := printf "leaflet-map-%d" .Ordinal -}}
+{{ with index . "id" }}
+    {{ $id = . }}
+{{ end }}
+
+{{ $class := index . "class" | default "ratio ratio-16x9 w-100 mx-auto" }}
+
+{{ $error := false }}
+{{ $viewLat := 52.377 }}
+{{ $viewLong := 4.90 }}
+{{ $zoom := 13 }}
+{{ $popup := "" }}
+{{ $popupLat := ""  }}
+{{ $popupLong := "" }}
+
+{{- with index . "lat" }}{{ $viewLat = . }}{{ end -}}
+{{- with index . "long" }}{{ $viewLong = . }}{{ end -}}
+{{- with index . "zoom" }}{{ $zoom = . }}{{ end -}}
+{{- with index . "popup" }}{{ $popup = . }}{{ end -}}
+{{- with index . "popup-lat" }}{{ $popupLat = . }}{{ end -}}
+{{- with index . "popup-long" }}{{ $popupLong = . }}{{ end -}}
+
+{{- if not $error -}}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ $id }}<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leaflet-map {{ $class }}<span class="token punctuation">"</span></span>
+      <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$viewLat</span> <span class="token attr-name">}}data-leaflet-view-lat</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ index $viewLat 0 }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+      <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$viewLong</span> <span class="token attr-name">}}data-leaflet-view-long</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ index $viewLong 0 }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+      <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$zoom</span> <span class="token attr-name">}}data-leaflet-view-zoom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ . }}<span class="token punctuation">"</span></span><span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span>
+      <span class="token attr-name">{{</span> <span class="token attr-name">with</span> <span class="token attr-name">$popup</span> <span class="token attr-name">}}</span>
+        <span class="token attr-name">data-leaflet-popup-caption</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{{ jsonify $popup }}<span class="token punctuation">'</span></span>
+        <span class="token attr-name">data-leaflet-popup-lat</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{{ jsonify $popupLat }}<span class="token punctuation">'</span></span>
+        <span class="token attr-name">data-leaflet-popup-long</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{{ jsonify $popupLong }}<span class="token punctuation">'</span></span>
+      <span class="token attr-name">{{</span> <span class="token attr-name">end</span> <span class="token attr-name">}}</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+{{- end -}}
+</code></pre>
+<p>Let's try to make it work for multiple markers and popups.</p>
+<p>It should handle the cases where there is only one marker and popup as well as the cases where there are multiple markers and popups.</p>
+<p>That is when value of latitude and longitude are arrays and when the value of popup is an array, or when the value of latitude and longitude are single values and the value of popup is a single value.</p>
+<p>Eg.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie Allard
+<span class="token key atrule">firstname</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie
+<span class="token key atrule">lastname</span><span class="token punctuation">:</span> allardpm
+<span class="token key atrule">latitude</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">52.377</span><span class="token punctuation">,</span> <span class="token number">52.378</span><span class="token punctuation">]</span>
+<span class="token key atrule">longitude</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">4.900</span><span class="token punctuation">,</span> <span class="token number">4.901</span><span class="token punctuation">]</span>
+<span class="token key atrule">popup</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"Amsterdam Central Station is it here?"</span><span class="token punctuation">,</span> <span class="token string">"Amsterdam Central Station is it here?"</span><span class="token punctuation">]</span>
+<span class="token punctuation">---</span>
+</code></pre>
+<p>or</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie Allard
+<span class="token key atrule">firstname</span><span class="token punctuation">:</span> Pierre<span class="token punctuation">-</span>Marie
+<span class="token key atrule">lastname</span><span class="token punctuation">:</span> allardpm
+<span class="token key atrule">latitude</span><span class="token punctuation">:</span> <span class="token number">52.377</span>
+<span class="token key atrule">longitude</span><span class="token punctuation">:</span> <span class="token number">4.900</span>
+<span class="token key atrule">popup</span><span class="token punctuation">:</span> <span class="token string">"Amsterdam Central Station is it here?"</span>
+<span class="token punctuation">---</span>
+</code></pre>
+<p>It's working ! Almost good :)
+I can now display the multiple markers.</p>
+<p>One thing is not OK is that I can view all popups. I can only view the last one.</p>
+<p>Does this has to do with </p>
+<p>const attribution = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+const tile = '<a href="https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&#x27;">https://tile.openstreetmap.org/{z}/{x}/{y}.png'</a></p>
+<p>document.querySelectorAll('div.leaflet-map').forEach(map => {
+const viewLat = map.getAttribute('data-leaflet-view-lat')
+const viewLong = map.getAttribute('data-leaflet-view-long')
+const zoom = map.getAttribute('data-leaflet-view-zoom')
+const popupData = map.getAttribute('data-leaflet-popup-caption')  // This will now store a JSON string</p>
+<p>  if (viewLat === null || viewLong === null || zoom === null) {
+console.error('leaflet-map.js: expected lat, long, and zoom')
+} else {
+const bind = L.map(map).setView([viewLat, viewLong], zoom)
+L.tileLayer(tile, { attribution }).addTo(bind)</p>
+<pre><code>// Parse popupData as an array
+const popups = popupData ? JSON.parse(popupData) : []
+const popupLatitudes = map.getAttribute('data-leaflet-popup-lat') ? JSON.parse(map.getAttribute('data-leaflet-popup-lat')) : []
+const popupLongitudes = map.getAttribute('data-leaflet-popup-long') ? JSON.parse(map.getAttribute('data-leaflet-popup-long')) : []
+
+if (popups.length &#x26;&#x26; popupLatitudes.length &#x26;&#x26; popupLongitudes.length) {
+  for (let i = 0; i &#x3C; popups.length; i++) {
+    if (popupLatitudes[i] &#x26;&#x26; popupLongitudes[i]) {
+      L.marker([popupLatitudes[i], popupLongitudes[i]]).addTo(bind)
+        .bindPopup(popups[i])
+        .openPopup()
+    }
+  }
+}
+</code></pre>
+<p>  }
+})</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/dendron-emi/notes/fvi2bh4uisut81x5q21bjf0">2024-10-07</a></li>
+</ul>
