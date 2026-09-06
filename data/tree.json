@@ -1,0 +1,497 @@
+{
+  "roots": [
+    {
+      "key": "u8djt1ub1j4pq2f6ob9i9ka",
+      "title": "Bioblitz",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "vrae5dt51ddpchgp8ny78cp",
+      "title": "Bioregistry",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "l03fwlci5f5rdpot3v7oli6",
+      "title": "Dendron",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "4ltijot3gnmv5a3n50mxujd",
+      "title": "Emi",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": [
+        {
+          "key": "3in66zlms2q2rfa2prx8298",
+          "title": "Missions",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "ifd39krpwjbpoujotes8k8e",
+      "title": "Food",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "4ukw0m9fnolvo16alfg228n",
+      "title": "Fundings",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "s1ylfmp2pclqnwyr7c4kf7i",
+      "title": "Library",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": [
+        {
+          "key": "wieq3cosdoob8xyvaww1g9b",
+          "title": "Automation",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": [
+            {
+              "key": "5ifg53go4aqtry5x8fnxeqh",
+              "title": "Cherry Picking",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "dendron-emi",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "js3zr1l8susd8q04dts8j3m",
+          "title": "Standards",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "gug1zw6wdzvta1evuzc5nut",
+      "title": "Manuals",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "gz9usdkc2az543npdnopxrs",
+      "title": "Metabolinkai",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "7ufk13bu087pe3ych9bz1oy",
+      "title": "Monorepo",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": [
+        {
+          "key": "zurlb9xvgq0nac4vckzusam",
+          "title": "Backend",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": []
+        },
+        {
+          "key": "6sunjqumyp68ibjz7e4tx42",
+          "title": "Frontend",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": []
+        },
+        {
+          "key": "9lrxbu977wdl7qo6qxz1mkx",
+          "title": "Web Common",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "fzeg276w1meifz5qyccsd4s",
+      "title": "Offline Mode",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "5m7xezdbh7m6hfkstiuvjis",
+      "title": "Open Notebook",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": [
+        {
+          "key": "2b2lt7v3dqchxc9yag61gul",
+          "title": "Emi",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": [
+            {
+              "key": "oww3ehma0cz53tbbrgh5e1x",
+              "title": "Mjopiti",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "dendron-emi",
+              "children": [
+                {
+                  "key": "v5869jo71400o7xcoies97a",
+                  "title": "2024",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "dendron-emi",
+                  "children": [
+                    {
+                      "key": "nxzi255rwiydq132b0p9li1",
+                      "title": "07",
+                      "icon": "plusOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "dendron-emi",
+                      "children": [
+                        {
+                          "key": "v5zls2vytueekq9twor2qck",
+                          "title": "2024-07-03",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        },
+                        {
+                          "key": "w1apexds30hsjxfdn3fqb08",
+                          "title": "2024-07-04",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        },
+                        {
+                          "key": "zap4g0jyk4vokt4izqosvlw",
+                          "title": "2024-07-05",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "h5a5xfw04j1ob118uty3nh7",
+              "title": "Pmallard",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "dendron-emi",
+              "children": [
+                {
+                  "key": "425k6eu1uecoocqwutwncqc",
+                  "title": "2024",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "dendron-emi",
+                  "children": [
+                    {
+                      "key": "4g4uushnsf2tud7yxi6k7yq",
+                      "title": "06",
+                      "icon": "plusOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "dendron-emi",
+                      "children": [
+                        {
+                          "key": "9rkr1eqpf24vq8iw30j2fdw",
+                          "title": "2024-06-03",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        },
+                        {
+                          "key": "ui5ilal57zv9w5cjdj3u45a",
+                          "title": "2024-06-05",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        },
+                        {
+                          "key": "s024v9r9xzbpv07fn7oj4my",
+                          "title": "2024-06-18",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        },
+                        {
+                          "key": "pbu4snep5ly3nbpfg8gd8dl",
+                          "title": "2024-06-28",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "key": "2asum54nol9el38wqswhezh",
+                      "title": "07",
+                      "icon": "plusOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "dendron-emi",
+                      "children": [
+                        {
+                          "key": "o2q8t2o2oaa2ldkf8u4bhm3",
+                          "title": "2024-07-02",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "key": "gwxg5bidkqyvhgrclkfirrj",
+                      "title": "10",
+                      "icon": "plusOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "dendron-emi",
+                      "children": [
+                        {
+                          "key": "fvi2bh4uisut81x5q21bjf0",
+                          "title": "2024-10-07",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "dendron-emi",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "yvialv0y265tyn1u4xxygn6",
+      "title": "Qc",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    },
+    {
+      "key": "d70boogfitpleyomb0zo8gs",
+      "title": "Templates",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": [
+        {
+          "key": "1r5qhwt2aq1qall2phrytlc",
+          "title": "Open Notebook",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": [
+            {
+              "key": "xyxixcqtrv6c9uf8yn5u781",
+              "title": "Dbgi",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "dendron-emi",
+              "children": [
+                {
+                  "key": "mz59v1zr7grqghkinjmk034",
+                  "title": "Open Notebook Mvisani",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "dendron-emi",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "bmaxazacn8rgzdqxraux51e",
+              "title": "Emi",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "dendron-emi",
+              "children": [
+                {
+                  "key": "0wos8p8ksf7xckz27k0mswp",
+                  "title": "Pmallard",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "dendron-emi",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "fr0673yyo1cwj0rt23qm06i",
+      "title": "Website",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": [
+        {
+          "key": "b72s2o287supid1wnu0o30i",
+          "title": "Hugo",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "dendron-emi",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "gw2wiyumdk5y78sex530yyr",
+      "title": "Workshops",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "dendron-emi",
+      "children": []
+    }
+  ],
+  "child2parent": {
+    "u8djt1ub1j4pq2f6ob9i9ka": null,
+    "vrae5dt51ddpchgp8ny78cp": null,
+    "l03fwlci5f5rdpot3v7oli6": null,
+    "4ltijot3gnmv5a3n50mxujd": null,
+    "3in66zlms2q2rfa2prx8298": "4ltijot3gnmv5a3n50mxujd",
+    "ifd39krpwjbpoujotes8k8e": null,
+    "4ukw0m9fnolvo16alfg228n": null,
+    "s1ylfmp2pclqnwyr7c4kf7i": null,
+    "wieq3cosdoob8xyvaww1g9b": "s1ylfmp2pclqnwyr7c4kf7i",
+    "5ifg53go4aqtry5x8fnxeqh": "wieq3cosdoob8xyvaww1g9b",
+    "js3zr1l8susd8q04dts8j3m": "s1ylfmp2pclqnwyr7c4kf7i",
+    "gug1zw6wdzvta1evuzc5nut": null,
+    "gz9usdkc2az543npdnopxrs": null,
+    "7ufk13bu087pe3ych9bz1oy": null,
+    "zurlb9xvgq0nac4vckzusam": "7ufk13bu087pe3ych9bz1oy",
+    "6sunjqumyp68ibjz7e4tx42": "7ufk13bu087pe3ych9bz1oy",
+    "9lrxbu977wdl7qo6qxz1mkx": "7ufk13bu087pe3ych9bz1oy",
+    "fzeg276w1meifz5qyccsd4s": null,
+    "5m7xezdbh7m6hfkstiuvjis": null,
+    "2b2lt7v3dqchxc9yag61gul": "5m7xezdbh7m6hfkstiuvjis",
+    "oww3ehma0cz53tbbrgh5e1x": "2b2lt7v3dqchxc9yag61gul",
+    "v5869jo71400o7xcoies97a": "oww3ehma0cz53tbbrgh5e1x",
+    "nxzi255rwiydq132b0p9li1": "v5869jo71400o7xcoies97a",
+    "v5zls2vytueekq9twor2qck": "nxzi255rwiydq132b0p9li1",
+    "w1apexds30hsjxfdn3fqb08": "nxzi255rwiydq132b0p9li1",
+    "zap4g0jyk4vokt4izqosvlw": "nxzi255rwiydq132b0p9li1",
+    "h5a5xfw04j1ob118uty3nh7": "2b2lt7v3dqchxc9yag61gul",
+    "425k6eu1uecoocqwutwncqc": "h5a5xfw04j1ob118uty3nh7",
+    "4g4uushnsf2tud7yxi6k7yq": "425k6eu1uecoocqwutwncqc",
+    "9rkr1eqpf24vq8iw30j2fdw": "4g4uushnsf2tud7yxi6k7yq",
+    "ui5ilal57zv9w5cjdj3u45a": "4g4uushnsf2tud7yxi6k7yq",
+    "s024v9r9xzbpv07fn7oj4my": "4g4uushnsf2tud7yxi6k7yq",
+    "pbu4snep5ly3nbpfg8gd8dl": "4g4uushnsf2tud7yxi6k7yq",
+    "2asum54nol9el38wqswhezh": "425k6eu1uecoocqwutwncqc",
+    "o2q8t2o2oaa2ldkf8u4bhm3": "2asum54nol9el38wqswhezh",
+    "gwxg5bidkqyvhgrclkfirrj": "425k6eu1uecoocqwutwncqc",
+    "fvi2bh4uisut81x5q21bjf0": "gwxg5bidkqyvhgrclkfirrj",
+    "yvialv0y265tyn1u4xxygn6": null,
+    "d70boogfitpleyomb0zo8gs": null,
+    "1r5qhwt2aq1qall2phrytlc": "d70boogfitpleyomb0zo8gs",
+    "xyxixcqtrv6c9uf8yn5u781": "1r5qhwt2aq1qall2phrytlc",
+    "mz59v1zr7grqghkinjmk034": "xyxixcqtrv6c9uf8yn5u781",
+    "bmaxazacn8rgzdqxraux51e": "1r5qhwt2aq1qall2phrytlc",
+    "0wos8p8ksf7xckz27k0mswp": "bmaxazacn8rgzdqxraux51e",
+    "fr0673yyo1cwj0rt23qm06i": null,
+    "b72s2o287supid1wnu0o30i": "fr0673yyo1cwj0rt23qm06i",
+    "gw2wiyumdk5y78sex530yyr": null
+  },
+  "notesLabelById": {
+    "u8djt1ub1j4pq2f6ob9i9ka": "Bioblitz",
+    "vrae5dt51ddpchgp8ny78cp": "Bioregistry",
+    "l03fwlci5f5rdpot3v7oli6": "Dendron",
+    "4ltijot3gnmv5a3n50mxujd": "Emi",
+    "3in66zlms2q2rfa2prx8298": "Missions",
+    "ifd39krpwjbpoujotes8k8e": "Food",
+    "4ukw0m9fnolvo16alfg228n": "Fundings",
+    "s1ylfmp2pclqnwyr7c4kf7i": "Library",
+    "wieq3cosdoob8xyvaww1g9b": "Automation",
+    "5ifg53go4aqtry5x8fnxeqh": "Cherry Picking",
+    "js3zr1l8susd8q04dts8j3m": "Standards",
+    "gug1zw6wdzvta1evuzc5nut": "Manuals",
+    "gz9usdkc2az543npdnopxrs": "Metabolinkai",
+    "7ufk13bu087pe3ych9bz1oy": "Monorepo",
+    "zurlb9xvgq0nac4vckzusam": "Backend",
+    "6sunjqumyp68ibjz7e4tx42": "Frontend",
+    "9lrxbu977wdl7qo6qxz1mkx": "Web Common",
+    "fzeg276w1meifz5qyccsd4s": "Offline Mode",
+    "5m7xezdbh7m6hfkstiuvjis": "Open Notebook",
+    "2b2lt7v3dqchxc9yag61gul": "Emi",
+    "oww3ehma0cz53tbbrgh5e1x": "Mjopiti",
+    "v5869jo71400o7xcoies97a": "2024",
+    "nxzi255rwiydq132b0p9li1": "07",
+    "v5zls2vytueekq9twor2qck": "2024-07-03",
+    "w1apexds30hsjxfdn3fqb08": "2024-07-04",
+    "zap4g0jyk4vokt4izqosvlw": "2024-07-05",
+    "h5a5xfw04j1ob118uty3nh7": "Pmallard",
+    "425k6eu1uecoocqwutwncqc": "2024",
+    "4g4uushnsf2tud7yxi6k7yq": "06",
+    "9rkr1eqpf24vq8iw30j2fdw": "2024-06-03",
+    "ui5ilal57zv9w5cjdj3u45a": "2024-06-05",
+    "s024v9r9xzbpv07fn7oj4my": "2024-06-18",
+    "pbu4snep5ly3nbpfg8gd8dl": "2024-06-28",
+    "2asum54nol9el38wqswhezh": "07",
+    "o2q8t2o2oaa2ldkf8u4bhm3": "2024-07-02",
+    "gwxg5bidkqyvhgrclkfirrj": "10",
+    "fvi2bh4uisut81x5q21bjf0": "2024-10-07",
+    "yvialv0y265tyn1u4xxygn6": "Qc",
+    "d70boogfitpleyomb0zo8gs": "Templates",
+    "1r5qhwt2aq1qall2phrytlc": "Open Notebook",
+    "xyxixcqtrv6c9uf8yn5u781": "Dbgi",
+    "mz59v1zr7grqghkinjmk034": "Open Notebook Mvisani",
+    "bmaxazacn8rgzdqxraux51e": "Emi",
+    "0wos8p8ksf7xckz27k0mswp": "Pmallard",
+    "fr0673yyo1cwj0rt23qm06i": "Website",
+    "b72s2o287supid1wnu0o30i": "Hugo",
+    "gw2wiyumdk5y78sex530yyr": "Workshops"
+  }
+}
