@@ -1,0 +1,41 @@
+<h1 id="2024-07-04">2024-07-04<a aria-hidden="true" class="anchor-heading icon-link" href="#2024-07-04"></a></h1>
+<h1 id="this-is-michaels-emi-open-notebook">This is Michael's EMI open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-michaels-emi-open-notebook"></a></h1>
+<p>Today is 2024.07.04</p>
+<h2 id="todo-today">Todo today<a aria-hidden="true" class="anchor-heading icon-link" href="#todo-today"></a></h2>
+<h3 id="have-a-look-at-the-emi-discussion-forum">Have a look at the EMI discussion forum<a aria-hidden="true" class="anchor-heading icon-link" href="#have-a-look-at-the-emi-discussion-forum"></a></h3>
+<pre><code>- https://github.com/orgs/earth-metabolome-initiative/discussions
+</code></pre>
+<h3 id=""><a aria-hidden="true" class="anchor-heading icon-link" href="#"></a></h3>
+<h3 id="-1"><a aria-hidden="true" class="anchor-heading icon-link" href="#-1"></a></h3>
+<h2 id="doing">Doing<a aria-hidden="true" class="anchor-heading icon-link" href="#doing"></a></h2>
+<p>Exploring XML files to automatize mzmine batch mode - Follow up</p>
+<p>File used: /home/jopitim/mzmine-batch-mode-sandbox/docs/dbgi_project_00002/cuso_batch_00001/results/mzmine/cuso_batch_00001_batch.mzbatch</p>
+<p>The file is a nested structure, where the root is batch (possibility to extend to multiple batches?).
+The problem is that nested only for: batch -> batchstep -> parameter/files/modules
+Already on the second step the tree structure starts to fall apart and case per case should be studied.</p>
+<h2 id="batchstep-structure">Batchstep structure<a aria-hidden="true" class="anchor-heading icon-link" href="#batchstep-structure"></a></h2>
+<p>It is always composed of 2 attributes:</p>
+<ul>
+<li>method="io.github.mzmine.modules.somethingElse"</li>
+<li>parameter_version="1" or "2"</li>
+</ul>
+<p>I don't currently know what 1 and 2 means</p>
+<p>I should scout in the modules directory in mzmine to understand how to retrieve the modules and/or exploit some structures.
+-> <a href="https://github.com/">https://github.com/</a></p>
+<p>First batchstep should always be file input? (idk but feels right), then it's up to the user.</p>
+<h2 id="todo-tomorrow-one-day--or-never">Todo tomorrow, one day ... or never<a aria-hidden="true" class="anchor-heading icon-link" href="#todo-tomorrow-one-day--or-never"></a></h2>
+<p>Look if it makes sense to parse a complete XML file and then modify by removing what's not selected by the user.</p>
+<ul>
+<li>Not all parameters need to be set, some are there because the method allows it.</li>
+</ul>
+<p>I believe it should be good to create a general batchstep object which gets filled with the needed information (look into Luca's rust presetantion for not using a constructor (I forgot the right term but it's when you use points under the ::default() definition)).</p>
+<ul>
+<li>something like this has already been created in main.rs in sandbox git but it should be expanded to fit all parameters.</li>
+</ul>
+<h3 id="-2"><a aria-hidden="true" class="anchor-heading icon-link" href="#-2"></a></h3>
+<h3 id="-3"><a aria-hidden="true" class="anchor-heading icon-link" href="#-3"></a></h3>
+<h3 id="-4"><a aria-hidden="true" class="anchor-heading icon-link" href="#-4"></a></h3>
+<h2 id="today-i-learned-that">Today I learned that<a aria-hidden="true" class="anchor-heading icon-link" href="#today-i-learned-that"></a></h2>
+<ul>
+<li></li>
+</ul>
